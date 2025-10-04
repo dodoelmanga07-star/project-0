@@ -1,0 +1,403 @@
+
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/styiel.css">
+    <link rel="stylesheet" href="css/all.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <h5 class="modal-title" id="loginModalLabel">تسجيل الدخول</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="إغلاق"></button>
+      </div>
+
+      <div class="modal-body">
+        <form>
+          <div class="mb-3">
+            <label for="loginEmail" class="form-label">البريد الإلكتروني</label>
+            <input type="email" class="form-control" id="loginEmail" placeholder="example@email.com">
+          </div>
+          <div class="mb-3">
+            <label for="loginPassword" class="form-label">كلمة المرور</label>
+            <input type="password" class="form-control" id="loginPassword" placeholder="********">
+          </div>
+          <button type="submit" class="btn btn-primary w-100">دخول</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+<body>
+    
+<nav class="navbar navbar-expand-sm navbar-dark fixed-top" style="background-color :rgba(46, 164, 219, 0.9);">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="javascript:void(0)">GHADA</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="mynavbar">
+      <ul class="navbar-nav me-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="javascript:void(0)">الرئيسيه</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="javascript:void(0)">روابط</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="javascript:void(0)">الرحلات</a>
+        </li>
+      </ul>
+      <form class="d-flex">
+        <input class="form-control me-2" type="text" placeholder="Search">
+        <button class="btn btn-primary me-2" type="button">Search</button>
+        <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#loginModal">
+  Login
+</button>
+      </form>
+    </div>
+  </div>
+</nav>
+<div class="hero-section with-navbar">
+    <div class="carousel-caption d-flex flex-column justify-content-center align-items-center min-vh-100">
+    <h3 class="text-primary">مصر بلدنا</h3>
+    <p class="text-primary">القاهرة عاصمه مصر,المنصورةعاصمة الجمال</p>
+    <button type="button" class="btn btn-outline-primary" data-bs-toggle="moda" data-bs-target="#loginModal">
+  زورونا
+</button>
+  </div>
+</div>
+
+<div class="social-icons d-flex flex-column">
+  <i class="fa-brands fa-facebook"></i>
+  <i class="fa-brands fa-github"></i>
+  <i class="fa-brands fa-rebel"></i>
+</div>
+
+<section class="container my-5" dir="rtl">
+  <h3 class="mb-4 text-center">أكتشف معنا</h3>
+</section>
+
+<div class="carousel-continer"> 
+  
+    <div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+<div class="carousel-indicators">
+  <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+  <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+  <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+</div>
+
+  <div class="carousel-ineer">
+    <div class="carousel-item active">
+      <img src="image/-egypt.jpg" alt="Los Angeles" class="d-block mx-auto">
+       <div class="carousel-caption">
+    <h3>النيل</h3>
+    <p>شريان الحياه</p>
+  </div>
+    </div>
+    <div class="carousel-item">
+      <img src="image/dahab.jpg" alt="Chicago" class="d-block mx-auto">
+       <div class="carousel-caption">
+    <h3>دهب</h3>
+    <p>اغطس واستمتع</p>
+  </div>
+    </div>
+    <div class="carousel-item">
+      <img src="image/alexandariajpg.jpg" alt="New York" class="d-block mx-auto">
+       <div class="carousel-caption">
+    <h3>مكتبة الاسكندريه</h3>
+    <p>تاريخ العالم</p>
+  </div>
+    </div>
+  </div>
+
+  <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </button>
+</div>
+</div>
+
+<body class="bg-light">
+
+  <div class="container py-5">
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="wave-card">
+          <img src="image/images (8).jfif" alt="الأقصر" class="img-fluid">
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="wave-card">
+          <img src="image/images (5).jfif" alt="الإسكندرية" class="img-fluid">
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="wave-card">
+          <img src="image/images (3).jfif" alt="القاهرة" class="img-fluid">
+        </div>
+      </div>
+    </div>
+  </div>
+
+<section class="custom-section d-flex align-items-center">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-8">
+        <div class="hidden-content">
+          <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+                  Accordion Item #1
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                 (Dream Bark)عاوز تلعب 
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+                  Accordion Item #2
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                 عاوز الجمال يبقي(المنصورة)
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree">
+                  Accordion Item #3
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  راحه البال(لما تموت)
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <div class="container py-5">
+    <div class="row g-4">
+    <div class="col-md-4">
+      <div class="hover-card">
+        <img src="image/download (5).jpg" alt="صورة" class="img-fluid">
+        <div class="hover-content">
+          <h4>DR.Magdi Yacoub</h4>
+          <p> بروفيسور مصري، وجراح قلب </p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="col-md-4">
+      <div class="hover-card">
+        <img src="image/images (12).jpg" alt="صورة" class="img-fluid">
+        <div class="hover-content">
+          <h4>Albert Instuben</h4>
+          <p>عالم فيزياء ألماني المولد سويسري وأمريكي الجنسية</p>
+        </div>
+      </div>
+    </div>
+
+      <div class="col-md-4">
+        <div class="hover-card">
+          <img src="image/images (10).jpg" alt="صورة" class="img-fluid">
+          <div class="hover-content">
+            <h4>DR.Ahmed Zewail</h4>
+            <p> عالم كيميائي مصري أمريكي</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<section class="container my-5" dir="rtl">
+  <h3 class="mb-4 text-center">أحدث الحلقات</h3>
+  <div class="hover-card3">
+  <div class="card mb-4 shadow-sm">
+      <div class="row g-0">
+        <div class="col-md-4 order-md-1">
+          <img src="image/images (4).jfif" class="img-fluid rounded-start card-img-fixed" alt="غردقة">
+        </div>
+        <div class="col-md-8 d-flex flex-column justify-content-center p-3 text-end order-md-2">
+          <h5 class="card-title">اكتشف سحر الغردقة</h5>
+          <small class="text-muted">الاثنين، 25 مايو 2020</small>
+          <p class="card-text mt-2">
+            اكتشف معنا جمال البحر الأحمر والشعاب المرجانية المذهلة. رحلة ممتعة في أعماق البحر مع أجمل الكائنات البحرية والألوان الخلابة.
+          </p>
+          <div class="d-flex align-items-center mt-2 flex-wrap">
+            <span class="badge bg-dark ms-2">بودكاست</span>
+            <span class="badge bg-secondary ms-2">55 دقيقة</span>
+            <a href="#" class="btn btn-info text-white ms-2">استمع الآن</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="hover-card3"> 
+  <div class="card mb-4 shadow-sm">
+    <div class="row g-0">
+      <div class="col-md-4 order-md-1">
+        <img src="image/download (5).jfif" class="img-fluid rounded-start card-img-fixed" alt="غردقة">
+      </div>
+      <div class="col-md-8 d-flex flex-column justify-content-center p-3 text-end order-md-2">
+        <h5 class="card-title">اكتشف سحر الفيوم</h5>
+        <small class="text-muted">الاثنين، 25 مايو 2020</small>
+        <p class="card-text mt-2">
+          محافظة الفيوم هي إحدى محافظات مصر وعاصمتها مدينة الفيوم وهي أكبر واحة طبيعية في مصر
+        </p>
+        <div class="d-flex align-items-center mt-2 flex-wrap">
+          <span class="badge bg-dark ms-2">بودكاست</span>
+          <span class="badge bg-secondary ms-2">55 دقيقة</span>
+          <a href="#" class="btn btn-info text-white ms-2">استمع الآن</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <div class="hover-card3"> 
+  <div class="card mb-4 shadow-sm">
+    <div class="row g-0">
+      <div class="col-md-4 order-md-1">
+        <img src="image/unnamed.jpg" class="img-fluid rounded-start card-img-fixed" alt="غردقة">
+      </div>
+      <div class="col-md-8 d-flex flex-column justify-content-center p-3 text-end order-md-2">
+       <h5 class="card-title">سحر المنصوره </h5>
+        <small class="text-muted">الاثنين، 25 مايو 2020</small>
+        <p class="card-text mt-2">
+          مكتبة بوكس آند بينز &ميدان أم كلثوم &دار ابن لقمان (متحف المنصورة القومي) 
+        </p>
+        <div class="d-flex align-items-center mt-2 flex-wrap">
+          <span class="badge bg-dark ms-2">بودكاست</span>
+          <span class="badge bg-secondary ms-2">55 دقيقة</span>
+          <a href="#" class="btn btn-info text-white ms-2">استمع الآن</a>
+        </div>
+      </div>
+    </div>
+    </div>
+  </div>
+
+  <div class="hover-card3">
+  <div class="card mb-4 shadow-sm">
+    <div class="row g-0">
+      <div class="col-md-4 order-md-1">
+        <img src="image/download (8).jfif" class="img-fluid rounded-start card-img-fixed" alt="غردقة">
+      </div>
+      <div class="col-md-8 d-flex flex-column justify-content-center p-3 text-end order-md-2">
+        <h5 class="card-title">الحسن و الحسين</h5>
+        <small class="text-muted">الاثنين، 25 مايو 2020</small>
+        <p class="card-text mt-2">
+          الحسين، هو شياخة من شياخات حي وسط بالمنطقة الغربية في محافظة القاهرة
+        </p>
+        <div class="d-flex align-items-center mt-2 flex-wrap">
+          <span class="badge bg-dark ms-2">بودكاست</span>
+          <span class="badge bg-secondary ms-2">55 دقيقة</span>
+          <a href="#" class="btn btn-info text-white ms-2">استمع الآن</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <section class="container my-5" dir="rtl">
+  <h3 class="mb-4 text-center">تواصل معنا</h3>
+</section>
+
+<section class="container my-5" dir="rtl">
+   <div class="row g-4">
+
+     <div class="col-lg-3 col-md-6 col-12">
+       <div class="card1 h-100 shadow-sm">
+         <img src="image/bg(1).jpg" alt="Avatar Logo" style="width:40px;" class="rounded-pill"> 
+         <div class="card-body text-end">
+           <h5 class="card-title">المنصوره</h5>
+          </div>
+        </div>
+      </div>
+      
+  <div class="col-lg-3 col-md-6 col-12">
+    <div class="card1 h-100 shadow-sm">
+       <img src="image/bg(1).jpg" alt="Avatar Logo" style="width:40px;" class="rounded-pill"> 
+      <div class="card-body text-end">
+        <h5 class="card-title">شرم الشيخ</h5>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-lg-3 col-md-6 col-12">
+    <div class="card1 h-100 shadow-sm">
+       <img src="image/bg(1).jpg" alt="Avatar Logo" style="width:40px;" class="rounded-pill"> 
+      <div class="card-body text-end">
+        <h5 class="card-title">دهب</h5>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-lg-3 col-md-6 col-12">
+    <div class="card1 h-100 shadow-sm">
+      <img src="image/bg(1).jpg" alt="Avatar Logo" style="width:40px;" class="rounded-pill"> 
+      <div class="card-body text-end">
+        <h5 class="card-title">الأقصر وأسوان</h5>
+      </div>
+    </a>
+    </div>
+  </div>
+</div>
+</section>
+
+<footer class="footer text-center text-dark ">
+  <div class="footer-content container-fluid my-4">
+    <table class="table table-borderless mb-0 text-center">
+        <tr>
+          <th>شركة GHADA</th>
+          <th>Links</th>
+          <th>Email</th>
+        </tr>
+        <tr>
+          <td>الهاتف: 00000000</td>
+          <td>زورونا</td>
+          <td>john@example.com</td>
+        </tr>
+        <tr>
+          <td>فاكس: 0000000</td>
+          <td>احجز الان</td>
+          <td>mary@example.com</td>
+        </tr>
+        <tr>
+          <td>العنوان:المنصورة</td>
+          <td>حياتك احلي</td>
+          <td>july@example.com</td>
+        </tr>
+    </table>
+  </div>
+
+  <nav class="footer-nav bg-info py-2">
+    <span>© 2025 GHADA</span>
+  </nav>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+

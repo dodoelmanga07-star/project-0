@@ -1,0 +1,242 @@
+
+body{
+    padding-top: 0;
+    margin: 0;
+    overflow-x: hidden;
+}
+.fullscreen-img{
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+
+.hero-section{
+    background: url("../image/-egypt.jpg") no-repeat center/cover;
+    height: 100vh ;
+}
+
+.social-icons {
+  position: fixed;
+  top: 50%;
+  right: 10px;   
+  z-index: 1000;
+  font-size: 32px;  
+  color: #2d6692;     
+}
+
+.social-icons i {
+  margin-bottom: 10px;
+  cursor: pointer;
+  transition: transform 0.2s, color 0.2s;
+}
+
+.social-icons i:hover {
+  transform: scale(1.2);
+  color: #17a2b8;  
+}
+
+.with-navbar{
+    margin-top: 56px;
+    height: calc(100vh - 56px);
+    
+}
+
+.carousel-continer{
+    display: flex;
+    justify-content: center;
+    margin-top: 90px ;
+    margin-bottom: 90px;
+}
+
+.carousel-continer img{
+    width: 1300px;
+    height: 500px ;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.wave-card {
+  overflow: hidden;
+  border-radius: 50% 50% 0 0 / 10% 10% 90% 90%;
+  transition: border-radius 0.7s ease-in-out;
+}
+
+.wave-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.5s ease-in-out;
+}
+
+.wave-card:hover {
+  border-radius: 10% 10% 90% 90% / 50% 50% 0 0; 
+}
+
+.wave-card:hover img {
+  transform: scale(1.1);
+}
+
+.custom-section {
+  background: url("../image/kano.jpg") no-repeat center center/cover;
+  min-height: 70vh;
+  position: relative;
+}
+
+.hidden-content {
+  opacity: 0;
+  transform: translateY(40px);  
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.custom-section:hover .hidden-content {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.accordion,.accordion-item,.accordion-button,.accordion-body {
+  background-color: transparent !important;
+  box-shadow: none !important; 
+  color: #fff;
+  font-weight: 600;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+}
+
+.accordion-button::after {
+  filter: invert(1);
+}
+
+.accordion-button {
+  background: transparent !important;
+  color: #fff !important;
+  font-weight: 600;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.8);
+  border: none;
+}
+
+.accordion-button::after {
+  filter: invert(1);
+}
+
+.accordion-body {
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.5s ease;
+  color: #fff;
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.8);
+}
+
+.accordion-item:hover .accordion-body {
+  opacity: 1;
+  max-height: 200px;
+}
+
+.hover-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.hover-card img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.4s ease;
+}
+
+.hover-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  padding: 20px;
+  text-align: center;
+  border-radius: 15px;
+}
+
+.hover-card:hover img {
+  transform: scale(1.1);
+}
+
+.hover-card:hover .hover-content {
+  opacity: 1;
+}
+
+.card-img-fixed {
+  width: 100%;
+  height: 100%;
+  max-height: 250px;
+  object-fit: cover;
+  display: block;
+}
+
+.wave-over-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60px; 
+  overflow: hidden;
+}
+
+.wave-over-image svg {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.hover-card3:hover{
+    transform: scale(1.1);
+    transition: transform 0.5s ease-in-out;
+}
+
+.card1 {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  justify-content: center;
+}
+
+.card1  img{
+  width: 24px;
+  height: 24px;
+}
+
+.footer {
+  position: absolute;
+  right: 0;
+  left: 0;
+  width: 100%;
+  background-color: #17a2b8;
+  margin: 0 !important;
+  padding: 0 !important;
+  overflow: hidden;
+}
+
+.footer nav {
+  width: 100%;
+  background-color: #17a2b8;
+  text-align: center;
+  color: white; 
+  margin: 0;
+}
+
+.footer table, footer table tbody, footer table thead, footer table tr, footer table th, footer table td{
+  background-color: #17a2b8 !important;
+}
+ 
+.footer-content{
+  background-color: #17a2b8 !important;
+}
